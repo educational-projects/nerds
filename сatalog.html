@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
   </head>
 
   <body>
-    <header>
-      <div>
-        <a href="index.html">
-          <img src="https://via.placeholder.com/150x100" alt="логотип" />
-        </a>
-      </div>
-      <nav>
-        <ul>
+    <header class="main-header">
+      <a href="index.html" class="main-heder-logo">
+        <img
+          src="img/logo/logo.svg"
+          width="160"
+          height="65"
+          alt="логотип Нёрдс"
+        />
+      </a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="#">Cтудия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a href="сatalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <div>
-        <a href="#">Корзина</a>
-      </div>
-      <h1>Магазин готовых шаблонов</h1>
+      <a class="cart" href="#">
+        <img
+          src="img/cart-icon.svg"
+          width="15"
+          height="15"
+          alt="Корзина покупок"
+        />
+        Корзина
+      </a>
     </header>
     <main>
+      <h1>Магазин готовых шаблонов</h1>
       <section>
         <h2>Фильтр торваров</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
@@ -150,7 +159,6 @@
         <h2>Список шаблонов</h2>
         <ul>
           <li>
-            <a href="#">
               <img
                 src="img/items/sedona.jpg"
                 width="359"
@@ -162,10 +170,8 @@
                 <p>Информационный сайт для туристов</p>
                 <a href="#"> 9 900 ₽ </a>
               </div>
-            </a>
           </li>
           <li>
-            <a href="#">
               <img
                 src="img/items/pink.jpg"
                 width="359"
@@ -177,10 +183,8 @@
                 <p>продуктовый лендинг приложения для IOS и Android</p>
                 <a href="#"> 9 900 ₽ </a>
               </div>
-            </a>
           </li>
           <li>
-            <a href="#">
               <img
                 src="img/items/barbershop.jpg"
                 width="359"
@@ -192,10 +196,8 @@
                 <p>Cайт салона красоты. Для мужчин,да.</p>
                 <a href="#"> 9 900 ₽ </a>
               </div>
-            </a>
           </li>
           <li>
-            <a href="#">
               <img
                 src="img/items/mishka.jpg"
                 width="359"
@@ -207,10 +209,8 @@
                 <p>Интернет-магазин вязанных игрушек</p>
                 <a href="#"> 9 900 ₽ </a>
               </div>
-            </a>
           </li>
           <li>
-            <a href="#">
               <img
                 src="img/items/aplus.jpg"
                 width="359"
@@ -222,10 +222,8 @@
                 <p>Лендинг курсов повышения квалификации</p>
                 <a href="#"> 9 900 ₽ </a>
               </div>
-            </a>
           </li>
           <li>
-            <a href="#">
               <img
                 src="img/items/kvast.jpg"
                 width="359"
@@ -237,7 +235,6 @@
                 <p>Промо-сайт производителя крафтового кваса</p>
                 <a href="#"> 9 900 ₽ </a>
               </div>
-            </a>
           </li>
         </ul>
         <ul>
