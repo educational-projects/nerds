@@ -27,18 +27,373 @@
 /* Variables */
 
 :root {
+  --basic-grey-text: #283136;
   --basic-black: #000000;
-  --basic-anthracite-grey: #283136;
-  --basic-white: #FFFFFF;
-  --basic-green: #00CA74;
-  --basic-red: #FB565A;
+  --basick-black-and-brow: #231F20;
   --basic-grey: #4D4D4D;
-  --basik-light-grey: #EEEEEE;
   --basic-light-black: #444444;
   --basic-gray: #666666;
-  --basik-light-grin: #00CA74;
+  --basic-gray-hover: #DFDFDF;
+  --basic-gray-active: #D5D5D5;
   --basic-orange: #EFC849;
-  --basick-black-and-brow: #231F20;
+  --basic-orange-hover: #EAB534;
+  --basic-orange-pressing: #E5A722;
+  --basic-green: #00CA74;
+  --basic-green-hover: #00BC6C;
+  --basic-green-pressing: #00AA62;
+  --basic-red1: #FB565A;
+  --basic-red-hover: #E74246;
+  --basic-red-pressing: #D7373B;
+  --basic-white: #FFFFFF;
+  --basik-light-grey: #EEEEEE;
   --basic-white-aluminum: #A6A6A6;
+}
+
+/* Global */
+
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-grey-text);
+
+  min-height: 100%;
+  display: grid;
+}
+
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.main-heder-logo:hover {
+  opacity: 0.7;
+}
+
+.main-heder-logo:active {
+  opacity: 0.3;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.site-navigation a:hover {
+  color: var(--basic-red1);
+}
+
+.site-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+
+.cart {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cart:hover {
+  color: var(--basic-red1);
+}
+
+.cart:focus {
+  color: var(--basic-black);
+  opacity: 30%;
+}
+
+.heading-features {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.heading-information {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.subtitle-information {
+ font-weight: 700;
+ text-transform: uppercase;
+}
+
+.text-list-info {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.heading-information-stats {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.contacts-subtitle {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.contacts-adress {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400px;
+  color: var(--basic-gray);
+  text-decoration: none;
+}
+
+.footer-friends {
+  line-height: 22px;
+  color: var(--basic-light-black);
+}
+
+.heading-friends {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.modal-feedback {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.heading-modal {
+  font-size: 45px;
+  line-height: 52,73px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+/* partners */
+
+.partners a{
+  opacity: 0.2;
+}
+
+.partners a:hover {
+  opacity: 1;
+}
+
+.partners a:active {
+  opacity: 0.1;
+}
+
+/* button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: var(--basic-red1);
+  border: none;
+  text-decoration: none;
+  padding: 17px 54px 15px 54px;
+  border-radius: 3px;
+}
+
+.button:hover {
+ background-color: var(--basic-red-hover)
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-red-pressing);
+  box-shadow: inset 0px 3px 0px;
+}
+
+.button-green {
+  background-color: var(--basic-green);
+}
+
+.button-green:hover {
+  background-color: var(--basic-green-hover);
+}
+
+.button-green:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-green-pressing);
+}
+
+.button-orange {
+  background-color: var(--basic-orange);
+}
+
+.button-orange:hover {
+  background-color: var(--basic-orange-hover);
+}
+
+.button-orange:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-orange-pressing);
+}
+
+.button-grey {
+  color: var(--basic-black);
+  background-color: var(--basik-light-grey);
+}
+
+.button-grey:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-gray-hover);
+}
+
+.button-grey:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px;
+}
+
+.button-buy:hover {
+  background-color: var(--basic-red-hover);
+}
+
+.button-buy:active {
+  color: var(--basic-white);
+  background-color: var(--basic-red-pressing)
+}
+
+.button-small {
+  padding: 17px 40px 15px 39px;
+}
+
+.button-contacts {
+  padding: 17px 44px 15px 44px;
+}
+
+.button-feedback {
+  padding: 17px 83px 15px 83px;
+}
+
+.button-filter {
+  padding: 17px 89px 15px 88px;
+}
+
+.button-purchases {
+  padding: 17px 72px 15px 72px;
+}
+
+.button-tiny {
+  padding: 17px 20px 15px 20px;
 
 }
+
+.button-grey-big {
+  padding: 17px 77px 15px 78px;
+}
+
+/* Catalog */
+
+.heading-catalog {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.sidebar-filter {
+  line-height: 20px;
+}
+
+.heading-filter {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.hidden-border {
+  border: none;
+}
+
+.catalog-item {
+  line-height: 18px;
+  color: var(--basic-gray);
+}
+
+.heading-item {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+/* filters */
+/*sorting filter*/
+.sorting,
+.sorting a {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-list a {
+  opacity: 0.3;
+}
+
+.sorting-list a:hover {
+  opacity: 0.6;
+}
+
+.sorting-list a:active {
+  opacity: 1;
+}
+
+
+
+.heading-sorting {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+

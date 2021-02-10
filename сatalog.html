@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/img/icons/icon.svg" type="image/svg+hml" />
   </head>
 
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <a href="index.html" class="main-heder-logo">
         <img
@@ -15,41 +19,62 @@
           alt="логотип Нёрдс"
         />
       </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a href="#">Cтудия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="сatalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <a class="cart" href="#">
-        <img
-          src="img/cart-icon.svg"
-          width="15"
-          height="15"
-          alt="Корзина покупок"
-        />
-        Корзина
-      </a>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <nav class="main-navigation">
+            <ul class="site-navigation">
+              <li>
+                <a href="#">
+                  Cтудия
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Клиенты
+                </a>
+              </li>
+              <li>
+                <a href="сatalog.html">
+                  Магазин
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="cart" href="#">
+            <img
+              src="img/cart-icon.svg"
+              width="15"
+              height="15"
+              alt="Корзина покупок"
+            />
+            Корзина
+          </a>
+        </div>
+      </div>
     </header>
+
     <main>
-      <h1>Магазин готовых шаблонов</h1>
-      <section>
+      <h1 class="heading-catalog">Магазин готовых шаблонов</h1>
+      <section class="sidebar-filter">
         <h2>Фильтр торваров</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Стоймойсть</legend>
-            <ul>
+          <fieldset class="hidden-border">
+            <legend class="heading-filter">Стоймойсть</legend>
+            <ul class="filter-list">
               <li>
                 <input type="text" value="0" />
                 <input type="text" value="15 000" />
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Сетка</legend>
-            <ul>
+          <fieldset class="hidden-border">
+            <legend class="heading-filter">Сетка</legend>
+            <ul class="filter-list">
               <li>
                 <input
                   type="radio"
@@ -80,9 +105,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Особенности</legend>
-            <ul>
+          <fieldset class="hidden-border">
+            <legend class="heading-filter">Особенности</legend>
+            <ul class="filter-list">
               <li>
                 <input
                   type="checkbox"
@@ -132,136 +157,167 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button button-grey button-filter" type="submit">
+            Показать
+          </button>
         </form>
       </section>
-      <section>
-        <h2>СОРТИРОВАТЬ</h2>
-        <ul>
+      <section class="sorting">
+        <h2 class="heading-sorting">Сортировать</h2>
+        <ul class="sorting-list">
           <li>
-            <a href="#">ПО ЦЕНЕ</a>
+            <a href="#">
+              По цене
+            </a>
           </li>
           <li>
-            <a href="#">ПО ТИПУ</a>
+            <a href="#">
+              По типу
+            </a>
           </li>
           <li>
-            <a href="#">ПО НАЗВАНИЮ</a>
+            <a href="#">
+              По названию
+            </a>
+          </li>
+        </ul>
+        <ul class="sorting-list">
+          <li>
+            <a href="#">
+              От большего
+            </a>
           </li>
           <li>
-            <a href="#">От большего</a>
-          </li>
-          <li>
-            <a href="#">От меньшего</a>
+            <a href="#">
+              От меньшего
+            </a>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="catalog-item">
         <h2>Список шаблонов</h2>
         <ul>
           <li>
-              <img
-                src="img/items/sedona.jpg"
-                width="359"
-                height="578"
-                alt="Проект сайта Sedona"
-              />
-              <div>
-                <h3>SEDONA</h3>
-                <p>Информационный сайт для туристов</p>
-                <a href="#"> 9 900 ₽ </a>
-              </div>
+            <img
+              src="img/items/sedona.jpg"
+              width="359"
+              height="578"
+              alt="Проект сайта Sedona"
+            />
+            <div>
+              <h3 class="heading-item">Sedona</h3>
+              <p>
+                Информационный сайт для туристов
+              </p>
+              <a class="button button-buy button-purchases" href="#">
+                9 900 ₽
+              </a>
+            </div>
           </li>
           <li>
-              <img
-                src="img/items/pink.jpg"
-                width="359"
-                height="578"
-                alt="Проект сайта Pink"
-              />
-              <div>
-                <h3>PINK APP</h3>
-                <p>продуктовый лендинг приложения для IOS и Android</p>
-                <a href="#"> 9 900 ₽ </a>
-              </div>
+            <img
+              src="img/items/pink.jpg"
+              width="359"
+              height="578"
+              alt="Проект сайта Pink"
+            />
+            <div>
+              <h3 class="heading-item">Pink app</h3>
+              <p>
+                продуктовый лендинг приложения для IOS и Android
+              </p>
+              <a class="button button-buy button-purchases" href="#">
+                9 900 ₽
+              </a>
+            </div>
           </li>
           <li>
-              <img
-                src="img/items/barbershop.jpg"
-                width="359"
-                height="578"
-                alt="Проект Барбершопа Бородинский"
-              />
-              <div>
-                <h3>BARBERSHOP</h3>
-                <p>Cайт салона красоты. Для мужчин,да.</p>
-                <a href="#"> 9 900 ₽ </a>
-              </div>
+            <img
+              src="img/items/barbershop.jpg"
+              width="359"
+              height="578"
+              alt="Проект Барбершопа Бородинский"
+            />
+            <div>
+              <h3 class="heading-item">Barbershop</h3>
+              <p>
+                Cайт салона красоты. Для мужчин,да.
+              </p>
+              <a class="button button-buy button-purchases" href="#">
+                9 900 ₽
+              </a>
+            </div>
           </li>
           <li>
-              <img
-                src="img/items/mishka.jpg"
-                width="359"
-                height="578"
-                alt="Проект сайта Mishka"
-              />
-              <div>
-                <h3>MISHKA</h3>
-                <p>Интернет-магазин вязанных игрушек</p>
-                <a href="#"> 9 900 ₽ </a>
-              </div>
+            <img
+              src="img/items/mishka.jpg"
+              width="359"
+              height="578"
+              alt="Проект сайта Mishka"
+            />
+            <div>
+              <h3 class="heading-item">Mishka</h3>
+              <p>
+                Интернет-магазин вязанных игрушек
+              </p>
+              <a class="button button-buy button-purchases" href="#">
+                9 900 ₽
+              </a>
+            </div>
           </li>
           <li>
-              <img
-                src="img/items/aplus.jpg"
-                width="359"
-                height="578"
-                alt="Проект сайта A PLUS"
-              />
-              <div>
-                <h3>A PLUS</h3>
-                <p>Лендинг курсов повышения квалификации</p>
-                <a href="#"> 9 900 ₽ </a>
-              </div>
+            <img
+              src="img/items/aplus.jpg"
+              width="359"
+              height="578"
+              alt="Проект сайта A PLUS"
+            />
+            <div>
+              <h3 class="heading-item">A plus</h3>
+              <p>
+                Лендинг курсов повышения квалификации
+              </p>
+              <a class="button button-buy button-purchases" href="#">
+                9 900 ₽
+              </a>
+            </div>
           </li>
           <li>
-              <img
-                src="img/items/kvast.jpg"
-                width="359"
-                height="578"
-                alt="Проект сайта КВАСТ"
-              />
-              <div>
-                <h3>КВАСТ</h3>
-                <p>Промо-сайт производителя крафтового кваса</p>
-                <a href="#"> 9 900 ₽ </a>
-              </div>
+            <img
+              src="img/items/kvast.jpg"
+              width="359"
+              height="578"
+              alt="Проект сайта КВАСТ"
+            />
+            <div>
+              <h3 class="heading-item">Кbast</h3>
+              <p>
+                Промо-сайт производителя крафтового кваса
+              </p>
+              <a class="button button-buy button-purchases" href="#">
+                9 900 ₽
+              </a>
+            </div>
           </li>
         </ul>
-        <ul>
-          <li>
-            <a>1</a>
-          </li>
-          <li>
-            <a href="#">2</a>
-          </li>
-          <li>
-            <a href="#">3</a>
-          </li>
-          <li>
-            <a href="#">СЛЕДУЮЩАЯ</a>
-          </li>
-        </ul>
+        <div class="pagenation">
+          <a class="button button-grey button-tiny" href="#"> 1 </a>
+          <a class="button button-grey button-tiny" href="#"> 2 </a>
+          <a class="button button-grey button-tiny" href="#"> 3 </a>
+          <a class="button button-grey button-grey-big" href="#"> Следующая </a>
+        </div>
       </section>
     </main>
+
     <footer class="main-footer">
       <div class="contacts">
         <h2>Как нас найти</h2>
-        <p>
-          NЁRDS DESIGN STUDIO
+        <p class="contacts-subtitle">
+          Nёrds design studio
           <adress class="contacts-adress">
             191186, Санк-Петербург, ул. Б.Конюшенная, д. 19/8
           </adress>
-          <a class="contacts-phone" href="tel: +78122757575">
+          <a class="contacts-adress" href="tel: +78122757575">
             тел. +7(812) 275-75-75
           </a>
         </p>
@@ -272,10 +328,10 @@
         <img src="img/map-marker.png" width="231" height="190" alt="" />
       </div>
       <div class="socials">
-        <a class="social-button" href="#"
-          >Вконтакте
+        <a class="social-button" href="#">
+          Вконтакте
           <img
-            src="img/SocialNetworks/vk-icon.svg"
+            src="img/social-networks/vk-icon.svg"
             width="16"
             height="15"
             alt="Вконтакте"
@@ -284,7 +340,7 @@
         <a class="social-button" href="#"
           >Фейсбук
           <img
-            src="img/SocialNetworks/fb-icon.svg"
+            src="img/social-networks/fb-icon.svg"
             width="12"
             height="22"
             alt="Фейсбук"
@@ -293,20 +349,21 @@
         <a class="social-button" href="#"
           >Инстаграм
           <img
-            src="img/SocialNetworks/insta-icon.svg"
+            src="img/social-networks/insta-icon.svg"
             width="21"
             height="21"
             alt="Инстаграм"
           />
         </a>
       </div>
-      <div>
-        <h2>Давайте дружить, это выгодно!</h2>
+      <div class="footer-friends">
+        <h2 class="heading-friends">Давайте дружить, это выгодно!</h2>
         скидка 10% для друзей из социальных сетей.
       </div>
     </footer>
-    <section>
-      <h2>Напишите нам</h2>
+
+    <section class="modal-feedback">
+      <h2 class="heading-modal">Напишите нам</h2>
       <button type="button">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="login-name">Ваше имя:</label>
