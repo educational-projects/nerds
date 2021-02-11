@@ -228,16 +228,17 @@
   text-decoration: none;
   padding: 17px 54px 15px 54px;
   border-radius: 3px;
+  display: inline-block;
 }
 
 .button:hover {
- background-color: var(--basic-red-hover)
+ background-color: var(--basic-red-hover);
 }
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: var(--basic-red-pressing);
-  box-shadow: inset 0px 3px 0px;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-green {
@@ -251,6 +252,7 @@
 .button-green:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: var(--basic-green-pressing);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1) ;
 }
 
 .button-orange {
@@ -264,6 +266,7 @@
 .button-orange:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: var(--basic-orange-pressing);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-grey {
@@ -278,8 +281,8 @@
 
 .button-grey:active {
   color: rgba(0, 0, 0, 0.3);
-  background-color: rgb(0, 1, 1, 0.1);
-  box-shadow: inset 0px 3px 0px;
+  background-color: var(--basic-gray-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-buy:hover {
@@ -288,7 +291,8 @@
 
 .button-buy:active {
   color: var(--basic-white);
-  background-color: var(--basic-red-pressing)
+  background-color: var(--basic-red-pressing);
+  box-shadow:  inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-small {
