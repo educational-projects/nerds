@@ -20,47 +20,37 @@
         />
       </a>
       <div class="main-navigation-wrapper">
-        <div class="container">
-          <nav class="main-navigation">
-            <ul class="site-navigation">
-              <li>
-                <a href="#">
-                  Cтудия
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Клиенты
-                </a>
-              </li>
-              <li>
-                <a href="сatalog.html">
-                  Магазин
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Контакты
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <a class="cart" href="#">
-            <img
-              src="img/cart-icon.svg"
-              width="15"
-              height="15"
-              alt="Корзина покупок"
-            />
-            Корзина
-          </a>
-        </div>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li>
+              <a href="#"> Cтудия </a>
+            </li>
+            <li>
+              <a href="#"> Клиенты </a>
+            </li>
+            <li>
+              <a href="сatalog.html"> Магазин </a>
+            </li>
+            <li>
+              <a href="#"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="cart" href="#">
+          <img
+            src="img/cart-icon.svg"
+            width="15"
+            height="15"
+            alt="Корзина покупок"
+          />
+          Корзина
+        </a>
       </div>
     </header>
 
-    <main>
-      <h1 class="heading-catalog">Магазин готовых шаблонов</h1>
-      <section class="sidebar-filter">
+    <main class="container page-catalog">
+      <h1 class="heading-catalog hidden">Магазин готовых шаблонов</h1>
+      <section class="sidebar-filter wrapper-filter">
         <h2>Фильтр торваров</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="hidden-border">
@@ -162,39 +152,29 @@
           </button>
         </form>
       </section>
-      <section class="sorting">
+      <section class="sorting wrapper-sorting">
         <h2 class="heading-sorting">Сортировать</h2>
         <ul class="sorting-list">
           <li>
-            <a href="#">
-              По цене
-            </a>
+            <a href="#"> По цене </a>
           </li>
           <li>
-            <a href="#">
-              По типу
-            </a>
+            <a href="#"> По типу </a>
           </li>
           <li>
-            <a href="#">
-              По названию
-            </a>
+            <a href="#"> По названию </a>
           </li>
         </ul>
         <ul class="sorting-list">
           <li>
-            <a href="#">
-              От большего
-            </a>
+            <a href="#"> От большего </a>
           </li>
           <li>
-            <a href="#">
-              От меньшего
-            </a>
+            <a href="#"> От меньшего </a>
           </li>
         </ul>
       </section>
-      <section class="catalog-item">
+      <section class="catalog-item wrapper-item">
         <h2>Список шаблонов</h2>
         <ul>
           <li>
@@ -206,9 +186,7 @@
             />
             <div>
               <h3 class="heading-item">Sedona</h3>
-              <p>
-                Информационный сайт для туристов
-              </p>
+              <p>Информационный сайт для туристов</p>
               <a class="button button-buy button-purchases" href="#">
                 9 900 ₽
               </a>
@@ -223,9 +201,7 @@
             />
             <div>
               <h3 class="heading-item">Pink app</h3>
-              <p>
-                продуктовый лендинг приложения для IOS и Android
-              </p>
+              <p>продуктовый лендинг приложения для IOS и Android</p>
               <a class="button button-buy button-purchases" href="#">
                 9 900 ₽
               </a>
@@ -240,9 +216,7 @@
             />
             <div>
               <h3 class="heading-item">Barbershop</h3>
-              <p>
-                Cайт салона красоты. Для мужчин,да.
-              </p>
+              <p>Cайт салона красоты. Для мужчин,да.</p>
               <a class="button button-buy button-purchases" href="#">
                 9 900 ₽
               </a>
@@ -257,9 +231,7 @@
             />
             <div>
               <h3 class="heading-item">Mishka</h3>
-              <p>
-                Интернет-магазин вязанных игрушек
-              </p>
+              <p>Интернет-магазин вязанных игрушек</p>
               <a class="button button-buy button-purchases" href="#">
                 9 900 ₽
               </a>
@@ -274,9 +246,7 @@
             />
             <div>
               <h3 class="heading-item">A plus</h3>
-              <p>
-                Лендинг курсов повышения квалификации
-              </p>
+              <p>Лендинг курсов повышения квалификации</p>
               <a class="button button-buy button-purchases" href="#">
                 9 900 ₽
               </a>
@@ -291,9 +261,7 @@
             />
             <div>
               <h3 class="heading-item">Кbast</h3>
-              <p>
-                Промо-сайт производителя крафтового кваса
-              </p>
+              <p>Промо-сайт производителя крафтового кваса</p>
               <a class="button button-buy button-purchases" href="#">
                 9 900 ₽
               </a>
@@ -310,59 +278,62 @@
     </main>
 
     <footer class="main-footer">
-      <div class="contacts">
-        <h2>Как нас найти</h2>
-        <p class="contacts-subtitle">
-          Nёrds design studio
-          <adress class="contacts-adress">
-            191186, Санк-Петербург, ул. Б.Конюшенная, д. 19/8
-          </adress>
-          <a class="contacts-phone" href="tel: +78122757575">
-            тел. +7(812) 275-75-75
+      <div class="footer-contacts">
+        <div class="contacts">
+          <h2>Как нас найти</h2>
+          <p class="contacts-subtitle">
+            Nёrds design studio
+            <adress class="contacts-adress">
+              191186, Санк-Петербург, ул. Б.Конюшенная, д. 19/8
+            </adress>
+            <a class="contacts-phone" href="tel: +78122757575">
+              тел. +7(812) 275-75-75
+            </a>
+          </p>
+          <a class="button button-contacts" href="#">Напишите нам</a>
+        </div>
+        <div class="map">
+          <img src="img/map-marker.png" width="231" height="190" alt="" />
+        </div>
+      </div>
+      <div class="footer-social">
+        <div class="socials">
+          <a class="social-button" href="#">
+            Вконтакте
+            <img
+              src="img/social-networks/vk-icon.svg"
+              width="16"
+              height="15"
+              alt="Вконтакте"
+            />
           </a>
-        </p>
-        <a class="button" href="#">Напишите нам</a>
-      </div>
-      <div class="map">
-        <img src="img/map.png" width="1440" height="416" alt="Карта проезда" />
-        <img src="img/map-marker.png" width="231" height="190" alt="" />
-      </div>
-      <div class="socials">
-        <a class="social-button" href="#">
-          Вконтакте
-          <img
-            src="img/social-networks/vk-icon.svg"
-            width="16"
-            height="15"
-            alt="Вконтакте"
-          />
-        </a>
-        <a class="social-button" href="#"
-          >Фейсбук
-          <img
-            src="img/social-networks/fb-icon.svg"
-            width="12"
-            height="22"
-            alt="Фейсбук"
-          />
-        </a>
-        <a class="social-button" href="#"
-          >Инстаграм
-          <img
-            src="img/social-networks/insta-icon.svg"
-            width="21"
-            height="21"
-            alt="Инстаграм"
-          />
-        </a>
-      </div>
-      <div class="footer-friends">
-        <h2 class="heading-friends">Давайте дружить, это выгодно!</h2>
-        скидка 10% для друзей из социальных сетей.
+          <a class="social-button" href="#"
+            >Фейсбук
+            <img
+              src="img/social-networks/fb-icon.svg"
+              width="12"
+              height="22"
+              alt="Фейсбук"
+            />
+          </a>
+          <a class="social-button" href="#"
+            >Инстаграм
+            <img
+              src="img/social-networks/insta-icon.svg"
+              width="21"
+              height="21"
+              alt="Инстаграм"
+            />
+          </a>
+        </div>
+        <div class="footer-friends">
+          <h2 class="heading-friends">Давайте дружить, это выгодно!</h2>
+          скидка 10% для друзей из социальных сетей.
+        </div>
       </div>
     </footer>
 
-    <section class="modal-feedback">
+    <section class="modal-feedback hidden">
       <h2 class="heading-modal">Напишите нам</h2>
       <button type="button">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -386,7 +357,7 @@
           id="comment-field"
           placeholder="В свободной форме"
         ></textarea>
-        <button type="submit">ОТПРАВИТЬ</button>
+        <button class="button button-feedback" type="submit">ОТПРАВИТЬ</button>
       </form>
     </section>
   </body>

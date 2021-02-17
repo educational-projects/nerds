@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/roboto.woff2") format("woff2"),
-   url("../fonts/roboto.woff") format("woff");
+    url("../fonts/roboto.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/robotobold.woff2") format("woff2"),
-   url("../fonts/robotobold.woff") format("woff");
+    url("../fonts/robotobold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -19,9 +19,9 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/robotomedium.woff2") format("woff2"),
-   url("../fonts/robotomedium.woff") format("woff");
-   font-weight: 500;
-   font-style: normal;
+    url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* Variables */
@@ -29,30 +29,30 @@
 :root {
   --basic-grey-text: #283136;
   --basic-black: #000000;
-  --basick-black-and-brow: #231F20;
-  --basic-grey: #4D4D4D;
+  --basick-black-and-brow: #231f20;
+  --basic-grey: #4d4d4d;
   --basic-light-black: #444444;
   --basic-gray: #666666;
-  --basic-gray-hover: #DFDFDF;
-  --basic-gray-active: #D5D5D5;
-  --basic-orange: #EFC849;
-  --basic-orange-hover: #EAB534;
-  --basic-orange-pressing: #E5A722;
-  --basic-green: #00CA74;
-  --basic-green-hover: #00BC6C;
-  --basic-green-pressing: #00AA62;
-  --basic-red1: #FB565A;
-  --basic-red-hover: #E74246;
-  --basic-red-pressing: #D7373B;
-  --basic-white: #FFFFFF;
-  --basik-light-grey: #EEEEEE;
-  --basic-white-aluminum: #A6A6A6;
+  --basic-gray-hover: #dfdfdf;
+  --basic-gray-active: #d5d5d5;
+  --basic-orange: #efc849;
+  --basic-orange-hover: #eab534;
+  --basic-orange-pressing: #e5a722;
+  --basic-green: #00ca74;
+  --basic-green-hover: #00bc6c;
+  --basic-green-pressing: #00aa62;
+  --basic-red1: #fb565a;
+  --basic-red-hover: #e74246;
+  --basic-red-pressing: #d7373b;
+  --basic-white: #ffffff;
+  --basik-light-grey: #eeeeee;
+  --basic-white-aluminum: #a6a6a6;
 }
 
 /* Global */
 
 .page-body {
-  min-width: 960px;
+  min-width: 1158px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -63,6 +63,8 @@
 
   min-height: 100%;
   display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 /* Grid */
@@ -74,10 +76,31 @@
 /* Main navigation */
 
 .main-navigation {
+  display: grid;
   line-height: 30px;
   font-weight: 500;
   background-color: transparent;
   text-transform: uppercase;
+}
+
+/* Container */
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Header */
+
+.main-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  outline: 5px solid rgba(255, 0, 0, 1);
+}
+
+.main-heder-logo {
+  justify-self: center;
 }
 
 .main-heder-logo:hover {
@@ -88,7 +111,18 @@
   opacity: 0.3;
 }
 
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  width: 437px;
+  margin: auto;
+  outline: 5px solid rgba(0, 255, 0, 1);
+  outline-offset: -5px;
+}
+
 .site-navigation {
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 
@@ -123,12 +157,50 @@
   opacity: 30%;
 }
 
+/* Features */
+
+.features {
+  margin-bottom: 80px;
+  outline: 5px solid rgba(0, 255, 255, 1);
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.features-item {
+  outline: 5px solid rgba(255, 0, 0, 1);
+  outline-offset: -5px;
+}
+
 .heading-features {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
+}
+
+/* Information */
+
+.text-information {
+  outline: 5px solid rgba(255, 0, 0, 1);
+}
+
+.tes1 {
+  outline: 5px solid rgba(0, 255, 0, 1);
+  outline-offset: -5px;
+}
+
+.tes2 {
+  outline: 5px solid rgba(0, 0, 255, 1);
+  outline-offset: -5px;
+}
+
+.wrap-information {
+  display: grid;
+  grid-template-columns: 800px 1fr;
 }
 
 .heading-information {
@@ -139,8 +211,8 @@
 }
 
 .subtitle-information {
- font-weight: 700;
- text-transform: uppercase;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .text-list-info {
@@ -152,6 +224,14 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+
+/* Contacs */
+
+.contacts {
+  width: 319px;
+  height: 308px;
+  background-color: var(--basic-white);
 }
 
 .contacts-subtitle {
@@ -175,6 +255,22 @@
   text-decoration: none;
 }
 
+/* Footer */
+
+.main-footer {
+  outline: 5px solid rgba(255, 0, 0, 1);
+}
+
+.footer-contacts {
+  background: url(/img/map.png);
+  background-size: 100%;
+}
+
+.footer-social {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 .footer-friends {
   line-height: 22px;
   color: var(--basic-light-black);
@@ -195,14 +291,18 @@
 
 .heading-modal {
   font-size: 45px;
-  line-height: 52,73px;
+  line-height: 52, 73px;
   font-weight: 700;
   color: var(--basic-black);
 }
 
 /* partners */
+.wrapper-partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-.partners a{
+.partners a {
   opacity: 0.2;
 }
 
@@ -231,7 +331,7 @@
 }
 
 .button:hover {
- background-color: var(--basic-red-hover);
+  background-color: var(--basic-red-hover);
 }
 
 .button:active {
@@ -251,7 +351,7 @@
 .button-green:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: var(--basic-green-pressing);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1) ;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-orange {
@@ -291,7 +391,7 @@
 .button-buy:active {
   color: var(--basic-white);
   background-color: var(--basic-red-pressing);
-  box-shadow:  inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-small {
@@ -322,7 +422,6 @@
 .button-tiny {
   padding-right: 20px;
   padding-left: 20px;
-
 }
 
 .button-grey-big {
@@ -331,6 +430,31 @@
 }
 
 /* Catalog */
+
+.page-catalog {
+  outline: 5px solid rgba(255, 0, 0, 1);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.wrapper-filter {
+  outline: 5px solid rgba(0, 255, 0, 1);
+  outline-offset: -5px;
+}
+
+.wrapper-sorting {
+  outline: 5px solid rgba(0, 0, 1, 1);
+  outline-offset: -5px;
+}
+
+.wrapper-item {
+  outline: 5px solid rgba(100, 100, 100, 1);
+  outline-offset: -5px;
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
 
 .heading-catalog {
   font-size: 55px;
@@ -405,3 +529,8 @@
   text-transform: uppercase;
 }
 
+/* Hidden */
+
+.hidden {
+  display: none;
+}
