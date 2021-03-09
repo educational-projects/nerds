@@ -235,7 +235,7 @@
 }
 
 .slider-controls .current {
-  background-image: url(/img/ellipse.svg);
+  background-image: url("../img/ellipse.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -342,7 +342,7 @@
 /* Footer */
 
 .footer-contacts {
-  background: url(../img/map.jpg);
+  background: url("../img/map.jpg");
   background-size: 100%;
   margin-bottom: 68px;
 }
@@ -434,7 +434,7 @@
   width: 21px;
   height: 21px;
   background-color: transparent;
-  background-image: url(/img/close-modal.svg);
+  background-image: url("../img/close-modal.svg");
   background-position: center;
   border: none;
 }
@@ -800,7 +800,7 @@
   top: 0;
   width: 23px;
   height: 23px;
-  background-image: url(/img/checkbox-off.svg);
+  background-image: url("../img/checkbox-off.svg");
   opacity: 0.4;
 }
 
@@ -811,7 +811,7 @@
   height: 23px;
   left: -35px;
   top: 0px;
-  background-image: url(/img/checkbox-on.svg);
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
