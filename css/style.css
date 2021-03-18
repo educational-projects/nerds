@@ -215,11 +215,7 @@
 }
 
 .slide p {
-  padding: 22px 190px 8px 0;
-}
-
-.slide p:nth-child(1n) {
-  padding: 11px 180px 18px 0;
+  padding: 10px 190px 18px 0;
 }
 
 .slide {
@@ -254,7 +250,7 @@
 
 .slider-text {
   z-index: 1;
-  max-width: 540px;
+  max-width: 550px;
 }
 
 .slider-controls {
@@ -391,10 +387,10 @@
 
 .contacts {
   position: absolute;
+  top: 36px;
   display: flex;
   flex-direction: column;
   padding: 49px 50px 47px;
-  transform: translateY(50%);
   background-color: var(--basic-white);
 }
 
@@ -403,7 +399,7 @@
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 23px;
+  padding-bottom: 5px;
   color: var(--basic-black);
 }
 
@@ -412,14 +408,14 @@
   size: 16px;
   line-height: 18px;
   font-weight: 400;
-  padding-bottom: 50px;
+  padding-bottom: 18px;
   color: var(--basic-gray);
 }
 
 .contacts-phone {
   line-height: 18px;
   font-weight: 400;
-  padding-bottom: 37px;
+  padding-bottom: 34px;
   color: var(--basic-gray);
   text-decoration: none;
 }
@@ -427,10 +423,17 @@
 /* Footer */
 
 .footer-contacts {
+  position: relative;
   min-height: 416px;
   background: url("../img/map.jpg");
   background-size: 100%;
   margin-bottom: 45px;
+}
+
+.map-marker {
+  position: absolute;
+  top: 85px;
+  right: 392px;
 }
 
 .footer-social {
