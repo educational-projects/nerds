@@ -1123,9 +1123,10 @@ fieldset:nth-child(2) {
   width: 0;
   height: 0;
   margin-right: 18px;
-  border-top: 10px solid var(--basick-black-and-brow);
+  border-top: 10px solid var(--basic-white-aluminum);
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
+  opacity: 0.2;
 }
 
 
@@ -1136,6 +1137,19 @@ fieldset:nth-child(2) {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   opacity: 0.2;
+}
+
+.descending:hover,
+.ascending:hover {
+  opacity: 1;
+}
+
+.descending:active {
+  border-top: 10px solid var(--basick-black-and-brow);
+}
+
+.ascending:active {
+  border-bottom: 10px solid var(--basick-black-and-brow);
 }
 
 .sorting-list a {
