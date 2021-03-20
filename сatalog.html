@@ -75,6 +75,7 @@
                   class="visually-hidden filter-input-radio"
                   type="radio"
                   name="grid"
+                  value="adaptive"
                   id="filter-adaptive"
                   checked
                 />
@@ -87,6 +88,7 @@
                   class="visually-hidden filter-input-radio"
                   type="radio"
                   name="grid"
+                  value="fixed"
                   id="filter-fixed"
                 />
                 <label class="filter-input-label" for="filter-fixed"
@@ -98,6 +100,7 @@
                   class="visually-hidden filter-input-radio"
                   type="radio"
                   name="grid"
+                  value="rubber"
                   id="filter-rubber"
                 />
                 <label class="filter-input-label" for="filter-rubber"
@@ -182,7 +185,7 @@
         <div class="sorting">
           <h2 class="heading-sorting">Сортировать</h2>
           <ul class="sorting-list">
-            <li>
+            <li class="sorting-element-active">
               <a href="#"> По цене </a>
             </li>
             <li>
@@ -193,7 +196,11 @@
             </li>
           </ul>
           <p class="sorting-price">
-            <a class="descending" href="#" aria-label="От большего"></a>
+            <a
+              class="descending descending-active"
+              href="#"
+              aria-label="От большего"
+            ></a>
             <a class="ascending" href="#" aria-label="От меньшего"></a>
           </p>
         </div>
@@ -334,7 +341,8 @@
             <h2 class="visually-hidden">Как нас найти</h2>
             <h3 class="contacts-subtitle">Nёrds design studio</h3>
             <adress class="contacts-adress">
-              191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
+              191186, Санкт-Петербург,<br />
+              ул. Б. Конюшенная, д. 19/8
             </adress>
             <a class="contacts-phone" href="tel: +78122757575">
               тел. +7 (812) 275-75-75
@@ -384,9 +392,7 @@
         </ul>
         <div class="footer-friends">
           <h2 class="heading-friends">Давайте дружить, это выгодно!</h2>
-          <p>
-            Cкидка 10% для друзей из социальных сетей.
-          </p>
+          <p>Cкидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>
