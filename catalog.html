@@ -399,30 +399,48 @@
 
     <section class="modal-feedback hidden">
       <h2 class="heading-modal">Напишите нам</h2>
-      <button type="button">Закрыть</button>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="login-name">Ваше имя:</label>
-        <input
-          id="login-name"
-          type="text"
-          name="name"
-          placeholder="Имя Фамилия"
-        />
-        <label for="login-email">Ваш email:</label>
-        <input
-          id="login-email"
-          type="text"
-          name="email"
-          placeholder="email@example.com"
-        />
-        <label for="comment-field">Текст письма:</label>
-        <textarea
-          name="comment"
-          id="comment-field"
-          placeholder="В свободной форме"
-        ></textarea>
+      <button class="button-modal" type="button" aria-label="Закрыть"></button>
+      <form
+        class="feedback-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <p class="feedback-item">
+          <label for="login-name">Ваше имя:</label>
+          <input
+            class="form-input"
+            required
+            id="login-name"
+            type="text"
+            name="name"
+            placeholder="Имя Фамилия"
+          />
+        </p>
+        <p class="feedback-item">
+          <label for="login-email">Ваш email:</label>
+          <input
+            class="form-input"
+            required
+            id="login-email"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          />
+        </p>
+        <p class="feedback-item">
+          <label for="comment-field">Текст письма:</label>
+          <textarea
+            class="form-text"
+            required
+            name="comment"
+            id="comment-field"
+            placeholder="В свободной форме"
+          ></textarea>
+        </p>
         <button class="button button-feedback" type="submit">ОТПРАВИТЬ</button>
       </form>
     </section>
+
+    <script src="./js/modal-feedback.js"></script>
   </body>
 </html>
